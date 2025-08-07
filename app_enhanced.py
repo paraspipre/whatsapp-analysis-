@@ -93,11 +93,11 @@ def main():
 def show_welcome_screen():
     """Display welcome screen with instructions"""
     st.markdown("""
-    ## 🎯 Welcome to WhatsApp Chat Analyzer!
+    ##  Welcome to WhatsApp Chat Analyzer!
     
     This tool helps you analyze your WhatsApp chat exports and discover interesting insights about your conversations.
     
-    ### 📋 How to use:
+    ### How to use:
     1. **Export your WhatsApp chat:**
        - Open WhatsApp Web or mobile app
        - Go to the chat you want to analyze
@@ -111,7 +111,7 @@ def show_welcome_screen():
        - Select a specific user or analyze the entire chat
        - Click "Start Analysis" to begin
        
-    ### 🔍 What you'll discover:
+    ### What you'll discover:
     - **Message statistics** (total messages, words, media, links)
     - **Timeline analysis** (monthly and daily patterns)
     - **Activity patterns** (busy days, hours, heatmaps)
@@ -119,7 +119,7 @@ def show_welcome_screen():
     - **Text analysis** (word clouds, common words, emoji usage)
     - **Advanced features** (sentiment analysis, response times)
     
-    ### 💡 Tips:
+    ### Tips:
     - Larger chat files may take longer to process
     - For best results, export chats without media files
     - The analysis works with both individual and group chats
@@ -129,13 +129,13 @@ def show_welcome_screen():
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.info("📊 **Message Statistics**\n\nView total messages, words, media shared, and links")
+        st.info("**Message Statistics**\n\nView total messages, words, media shared, and links")
     
     with col2:
-        st.info("📈 **Timeline Analysis**\n\nSee how conversation activity changes over time")
+        st.info("**Timeline Analysis**\n\nSee how conversation activity changes over time")
     
     with col3:
-        st.info("👥 **User Insights**\n\nDiscover who's most active and interaction patterns")
+        st.info("**User Insights**\n\nDiscover who's most active and interaction patterns")
 
 def run_analysis(df: pd.DataFrame, selected_user: str, filename: str):
     """Run the complete analysis"""
